@@ -1,0 +1,42 @@
+@import "variables";
+
+header {
+  border: 6px solid $accent-color;
+  .menu {
+    display: flex;
+    background-color: $primary-color;
+    li {
+      list-style: none;
+      padding-left: 10px;
+      &:first-of-type {
+        color: orange;
+      }
+      &:last-of-type {
+        color: green;
+      }
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.main-width {
+  width: $main-width;
+}
+footer {
+  .menu {
+    list-style: none;
+    li {
+      float: left;
+      padding: 20px;
+
+      &:hover {
+        background-color: aquamarine;
+      }
+    }
+    li:last-of-type {
+      float: right;
+    }
+  }
+}

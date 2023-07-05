@@ -1,0 +1,8 @@
+@use "sass:color";
+
+$color1: yellow;
+$color2: green;
+
+.content {
+  background-color: color.mix($color1, $color2, 50%);
+}

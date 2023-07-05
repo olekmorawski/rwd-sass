@@ -1,0 +1,13 @@
+@mixin customPlaceholder {
+  &::placeholder {
+    color: red;
+    @content;
+  }
+}
+
+input,
+textarea {
+  @include customPlaceholder {
+    color: aqua;
+  }
+}

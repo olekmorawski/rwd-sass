@@ -1,0 +1,19 @@
+@use "sass:math";
+
+.box {
+  width: 25px;
+  height: 25px;
+}
+@mixin elementColor {
+  @for $i from 1 through 10 {
+    .block#{$i} {
+      @if ($i % 2 == 0) {
+        background-color: orange;
+      } @else {
+        background-color: blue;
+      }
+    }
+  }
+}
+
+@include elementColor;

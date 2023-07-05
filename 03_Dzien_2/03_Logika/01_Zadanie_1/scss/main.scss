@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "sass:color";
+@mixin headerSize($font-size) {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: math.div($font-size, $i) + px;
+      color: color.mix(tomato, cornflowerblue, $i * 10%);
+    }
+  }
+}
+@include headerSize(60);

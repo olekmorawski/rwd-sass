@@ -1,0 +1,7 @@
+@use 'sass:color';
+
+@for $i from 1 through 4 {
+    h#{$i}{
+        color: ;
+    }
+}

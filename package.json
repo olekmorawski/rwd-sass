@@ -1,0 +1,13 @@
+{
+  "name": "sass",
+  "version": "2.0.0",
+  "source": "03_Dzien_2/05_Wstep_do_RWD_i_jednostki/03_Zadanie_3/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  }
+}

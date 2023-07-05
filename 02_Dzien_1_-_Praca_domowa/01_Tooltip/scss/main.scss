@@ -1,0 +1,25 @@
+@mixin setTooltip($text, $color) {
+  position: relative;
+
+  &::after {
+    content: $text;
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    color: $color;
+    border: 1px solid darkslategrey;
+  }
+}
+
+li:hover:first-of-type {
+  @include setTooltip("text tooltipa test", black);
+}
+li:hover:nth-child(2) {
+  @include setTooltip("text tooltipa test2", black);
+}
+li:hover:nth-child(3) {
+  @include setTooltip("text tooltipa test3", black);
+}
+li:hover:nth-child(4) {
+  @include setTooltip("text tooltipa test4", black);
+}

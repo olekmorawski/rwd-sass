@@ -1,0 +1,15 @@
+@mixin disabledHover {
+    &:disabled {
+      background-color: red;
+    }
+    @content;
+  }
+  
+  button {
+    @include disabledHover {
+      &:hover {
+        background-color: darkred;
+      }
+    }
+  }
+  

@@ -1,0 +1,15 @@
+@mixin drawItem($shape, $backgroundColor) {
+  @if $shape == circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: $backgroundColor;
+  } @else if $shape == rectangle {
+    width: 200px;
+    height: 200px;
+    background-color: $backgroundColor;
+  }
+}
+.draw-container {
+  @include drawItem(circle, greenkurwa);
+}
