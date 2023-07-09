@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.test_height_grandpa {
+  height: 50px;
+  background-color: red;
+}
+
+.test_height_daddy {
+  height: 200%;
+  background-color: blue;
+}
+.test_height_baby{
+    background-color: yellow;
+    height: 50%;
+}

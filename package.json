@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "source": "03_Dzien_2/05_Wstep_do_RWD_i_jednostki/03_Zadanie_3/index.html",
+  "source": "07_Dzien_4/02_Animacje/02_Zadania/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

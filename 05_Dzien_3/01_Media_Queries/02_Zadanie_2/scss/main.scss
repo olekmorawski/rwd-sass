@@ -1,0 +1,9 @@
+body {
+  background-color: orange;
+  @media only screen and (max-width: 800px) {
+    background-color: purple;
+    @media only screen and (max-width: 400px) {
+      background-color: green;
+    }
+  }
+}

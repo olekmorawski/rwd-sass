@@ -1,8 +1,4 @@
-@use "sass:math";
-
-* {
-  box-sizing: border-box;
-}
+@use 'sass:math';
 
 .container {
   width: 100%;
@@ -16,29 +12,17 @@
 
     $columns: 12;
     $column-base-width: math.div(100%, $columns);
-
+     
     @for $i from 1 through $columns {
       .col-#{$i} {
         min-height: 1px;
         width: $column-base-width * $i;
         padding: 12px;
-
+    
         @media screen and (max-width: 550px) {
           width: 100%;
         }
       }
     }
   }
-}
-
-.bg-orange {
-  background-color: orange;
-}
-
-.bg-blue {
-  background-color: blue;
-}
-
-.bg-purple {
-  background-color: purple;
 }
